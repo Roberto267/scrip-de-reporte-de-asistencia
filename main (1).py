@@ -5,9 +5,7 @@ from firebase_admin import credentials, firestore
 import glob
 
 # Inicializar Firebase
-cred = credentials.Certificate("F:\\CUCEI\\Instituto\\Prestadores de Servicio Social\\2025\\Reporte Septiembre 2025\\credenciales.json")
-firebase_admin.initialize_app(cred)
-db = firestore.client()
+#aqui poner la que te de firebase en configuracion de proyecto esta en el apartado de general.
 
 # Definir mes con año 
 mes = "septiembre 2025"
@@ -115,4 +113,5 @@ if respuesta == "s":
             })
     print("\n✅ Todos los datos fueron subidos a Firebase.")
 else:
+
     print("\n❌ Ningún dato fue subido a Firebase.")
